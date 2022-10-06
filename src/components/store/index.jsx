@@ -1,5 +1,5 @@
-import {Col, Image, Row, message} from 'antd';
-import React, {useEffect, useLayoutEffect, useState} from 'react';
+import { Col, Image, Row, message } from 'antd';
+import React, { useEffect, useLayoutEffect, useState } from 'react';
 import StoreApi from '../../api/StoreApi';
 import ModalContainer from '../modal/ModalContainer';
 
@@ -23,7 +23,7 @@ const Store = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   useLayoutEffect(() => {
-    message.config({top: 60, duration: 1, maxCount: 1});
+    message.config({ top: 60, duration: 1, maxCount: 1 });
   }, []);
 
   useEffect(() => {

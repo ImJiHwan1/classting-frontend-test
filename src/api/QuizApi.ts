@@ -1,9 +1,9 @@
-import {loadQuizItems} from '@interfaces/QuizInfo';
-import axios, {AxiosRequestConfig, AxiosResponse} from 'axios';
+import { loadQuizItems } from '@interfaces/QuizInfo';
+import axios, { AxiosRequestConfig, AxiosResponse } from 'axios';
 
 const axiosInstance = axios.create();
 
-export const getQuizData = async ({_amount, _type}: {_amount: string; _type: string}): Promise<any> => {
+export const getQuizData = async ({ _amount, _type }: { _amount: string; _type: string }): Promise<any> => {
   const params = {
     amount: _amount,
     type: _type,
@@ -22,8 +22,8 @@ export const ajaxGet = <T = any>(subURL: string, ownConfig?: AxiosRequestConfig)
   // TODO 파라미터 구성
   const params = ownConfig && ownConfig.params ? Object.assign({}, ownConfig.params) : {};
   const url = `${subURL}`;
-  const config = ownConfig ? Object.assign({}, ownConfig, {params}) : {params};
-  config.headers = {Accept: '*/*', 'Content-Type': 'application/json'};
+  const config = ownConfig ? Object.assign({}, ownConfig, { params }) : { params };
+  config.headers = { Accept: '*/*', 'Content-Type': 'application/json' };
   config.timeout = 5000;
   return axiosInstance.get(url, config);
 };

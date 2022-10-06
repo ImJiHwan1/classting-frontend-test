@@ -1,4 +1,4 @@
-import {createSlice, PayloadAction} from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 // initalState 타입 정의
 type StateType = {
@@ -31,7 +31,7 @@ export const QuizSlice = createSlice({
 });
 
 // 액션을 export 해준다.
-export const {update, incQuiz} = QuizSlice.actions;
+export const { update, incQuiz } = QuizSlice.actions;
 
 // 슬라이스를 export 해준다.
 export default QuizSlice;

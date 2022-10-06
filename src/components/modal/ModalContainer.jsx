@@ -1,8 +1,8 @@
-import {Image, Modal} from 'antd';
+import { Image, Modal } from 'antd';
 import React from 'react';
 
 const ModalContainer = (props) => {
-  const {name, description, image} = props.storeDetailItem;
+  const { name, description, image } = props.storeDetailItem;
 
   const handleOk = () => {
     if (props.onOk) {
@@ -29,7 +29,7 @@ const ModalContainer = (props) => {
             <br />
             <br />
             <div className="s-modal-text-wrap-bottom">
-              <div style={{whiteSpace: 'pre-line'}}>{description}</div>
+              <div style={{ whiteSpace: 'pre-line' }}>{description}</div>
             </div>
           </div>
         </div>
