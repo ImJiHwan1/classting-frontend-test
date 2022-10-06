@@ -1,11 +1,7 @@
-import {getQuizData} from '@api/QuizApi';
-import {QuizInfo} from '@interfaces/QuizInfo';
-import type {NextPage} from 'next';
+import React from 'react';
+import type { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
-import {useRouter} from 'next/router';
-import {useEffect} from 'react';
-import {useQuery} from 'react-query';
+import { useRouter } from 'next/router';
 
 const Home: NextPage = () => {
   const router = useRouter();
